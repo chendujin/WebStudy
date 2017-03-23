@@ -1,0 +1,13 @@
+$(document).ready(function(){
+  var el = $(".show-icon-temp");
+  var i = 9;
+  
+  var interval = setInterval(function(){
+    el.html(i);
+    i--;
+    if(i<0){
+      clearInterval(interval);
+      el.html('Wellcome');
+    }
+  },1000);
+});
