@@ -3,7 +3,7 @@ $(document).ready(function(){
   var i = 9;
   
   var interval = setInterval(function(){
-    el.html(i);
+    el.html("剩余时间：" + "<b>"+i+"<b/>");
     i--;
     if(i<0){
       clearInterval(interval);
